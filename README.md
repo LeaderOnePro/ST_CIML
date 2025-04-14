@@ -1,4 +1,4 @@
-# ST-CIML: 基于PyTorch的ST-CIML架构：一个详细的Python代码示例报告
+# ST-CIML: 基于PyTorch的ST-CIML架构
 
 ## I. 引言
 
