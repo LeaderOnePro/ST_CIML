@@ -1,0 +1,26 @@
+name: st_ciml_env
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9 # 或您希望使用的 Python 版本
+  - pytorch # 会自动选择适合您 CUDA 版本的版本
+  - torchvision
+  - torchaudio
+  # - pytorch-geometric # 取消注释以包含 PyG
+  - numpy
+  - scikit-learn
+  - scipy
+  - matplotlib # 用于绘图
+  - pandas # 用于处理 CSV 输出/输入
+  - pyyaml # 用于处理配置文件
+  - pip
+  - pip:
+    # 如果 PyG 在 Conda 中有问题，可以尝试 pip 安装
+    # - torch-scatter
+    # - torch-sparse
+    # - torch-cluster
+    # - torch-spline-conv
+    # - torch-geometric
+    # 添加其他 pip 依赖 
