@@ -45,9 +45,24 @@ ST-CIML架构旨在应对这些挑战，其核心组件包括：
 
 1.  **环境设置:**
     *   安装 Python (推荐使用 Conda 管理环境)。
-    *   安装 PyTorch (`conda install pytorch torchvision torchaudio cudatoolkit=xx.x -c pytorch` 或 `pip install torch torchvision torchaudio`)。
-    *   (如果使用GNN) 安装 PyTorch Geometric (`pip install torch_geometric` 或根据官方文档)。
-    *   安装其他依赖: `pip install numpy scikit-learn scipy`。
+    *   安装 PyTorch (例如使用 Conda):
+       ```bash
+       conda install pytorch torchvision torchaudio cudatoolkit=xx.x -c pytorch
+       ```
+       或者 Pip:
+       ```bash
+       pip install torch torchvision torchaudio
+       ```
+    *   (如果使用GNN) 安装 PyTorch Geometric:
+       ```bash
+       pip install torch_geometric
+       ```
+        (或根据官方文档)。
+    *   安装其他依赖 (根据 `environment.yml`):
+       ```bash
+       pip install numpy scikit-learn scipy matplotlib pandas pyyaml
+       ```
+       (根据需要添加其他库，如 `joblib` 用于保存 scalers)。
     *   (推荐) 创建 `environment.yml` 或 `requirements.txt` 文件来管理依赖。
 
 2.  **数据替换与预处理 (`src/data_preprocessing.py`, `data/`):**
